@@ -1,0 +1,179 @@
+/*body*/
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  height: 100%;
+  min-width: 320px;
+  margin: 0;
+  text-align: center;
+  margin-top: 0;
+}
+
+  nav {
+    position: fixed;
+    text-transform: uppercase;
+    top: 0;
+    font-size: 16px;
+    background: rgba(125,220,208,0.8);
+    line-height: 1.5em;
+    width: 100%;
+    text-align: center;
+
+    /*display: none;*/
+  }
+
+  nav a::before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+
+
+
+  ul {
+    padding: 10px;
+
+  }
+nav a{
+  color: white;
+  text-decoration: none;
+
+}
+  li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+}
+
+  section {
+  display: block;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+  img {
+
+}
+/*header*/
+
+#intro {
+  background-image: url("../images/solid.png");
+  background-size: cover;
+  font-weight: lighter;
+  height: 600px;
+  margin: auto;
+  vertical-align: middle;
+}
+.content {
+  top: 50%;
+  transform: translateY(50%);
+  line-height: 1em;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+#intro p h2 {
+
+
+}
+/*one*/
+
+#one {
+  background-image: url(images/book2.jpg);
+
+
+}
+
+form {
+  background-color: #7fdcd0;
+  font-size: 20px;
+  padding: 24px;
+  margin: 10%;
+  border-radius: 30px;
+}
+
+#submit:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #369286;
+    top: 2px;
+    box-shadow: 0 4px #369286;
+    transition: all .5s ease-in-out;
+}
+#submit {
+    box-shadow: 0 8px #369286;
+    border: solid 4px white;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    background: none;
+    cursor: pointer;
+    padding: 15px 40px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    border-radius: 5px;
+}
+
+#name {
+    box-shadow: 0 8px #369286;
+    border: solid 4px white;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    background: none;
+    cursor: pointer;
+    padding: 12px 18px;
+    display: inline-block;
+    margin: 15px 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+/*two*/
+
+#two {
+  background-image: url(images/book2.jpg);
+  top: 50%;
+  transform: translateY(50%);
+  line-height: 1em;
+}
+
+/*three*/
+
+#three {
+  background-image: url(images/book2.jpg);
+  top: 50%;
+  transform: translateY(50%);
+  line-height: 1em;
+}
+
+.paintings {
+  display: inline;
+}
+
+/*four*/
+
+#four {
+  background-image: url(images/book2.jpg);
+}
+
+/*footer*/
+
+#five {
+  background-image: url(images/endbook.jpg);
+}
