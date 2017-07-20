@@ -30,7 +30,7 @@ $("#submit").on("click", function(){
 
 var charaName = document.getElementById("name");
 
-  $("span, p").each(function() {
+  $("p").each(function() {
       var nameReplace = $(charaName).text();
       nameReplace = text.replace("userfirstname");
       $(this).text(text);

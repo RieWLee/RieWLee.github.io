@@ -1,7 +1,4 @@
 /*body*/
-html {
-  height: 100%;
-}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -65,13 +62,18 @@ nav a{
 }
 /*header*/
 
+header {
+  height: 0px;
+}
+
 #intro {
   background-image: url("../images/solid.png");
   background-size: cover;
   font-weight: lighter;
-  height: 600px;
+  height: 550px;
   margin: auto;
   vertical-align: middle;
+  color: white;
 }
 .content {
   top: 50%;
@@ -88,7 +90,8 @@ nav a{
 /*one*/
 
 #one {
-  background-image: url(images/book2.jpg);
+  background-image: url("../images/drips.png");
+  background-size: cover;
 
 
 }
@@ -147,7 +150,8 @@ form {
 /*two*/
 
 #two {
-  background-image: url(images/book2.jpg);
+  background-image: url("../images/solid.png");
+  background-size: cover;
   top: 50%;
   transform: translateY(50%);
   line-height: 1em;
@@ -156,7 +160,8 @@ form {
 /*three*/
 
 #three {
-  background-image: url(images/book2.jpg);
+  background-image: url("../images/solid.png");
+  background-size: cover;
   top: 50%;
   transform: translateY(50%);
   line-height: 1em;
@@ -169,11 +174,13 @@ form {
 /*four*/
 
 #four {
-  background-image: url(images/book2.jpg);
+  /*background-image: url("../images/solid.png");*/
+  background-position: bottom;
 }
 
 /*footer*/
 
 #five {
-  background-image: url(images/endbook.jpg);
+  background-image: url("../images/bottom.png");
+  background-size: contain;
 }

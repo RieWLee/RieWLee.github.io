@@ -1,23 +1,29 @@
-
-var girlStory = document.getElementById("f-option").checked;
-var boyStory = document.getElementById("m-option").checked;
-var otherStory = document.getElementById("x-option").checked;
-
-$("#submit").on("click", function(){
-  if (girlStory = true) {
-    window.open(story1.html);
-  } else if (boyStory = true){
-    window.open(story2.html);
-  } else {
-    window.open(story3.html);
-  }
-})
-
-
 var charaName = document.getElementById("name");
 
-  $("span, p").each(function() {
-      var nameReplace = $(charaName).text();
-      nameReplace = text.replace("userfirstname");
-      $(this).text(text);
-  });
+console.log (charaName)
+
+$(".farstory h2").each(function() {
+   var text = $(this).html();
+   $(this).html(text.replace("userf1rstname", '+charaName+'));
+});
+
+var gender = document.getElementById("gender").value;
+
+$("#storytime").on("submit",function(e){
+	e.preventDefault();
+	if (document.getElementById("f-option").checked) {
+	window.open("story1.html");
+	} if (document.getElementById("m-option").checked) {
+	window.open("story2.html");
+} else (document.getElementById("x-option").checked)
+	window.open("story3.html");
+});
+
+
+
+
+  // $("span, p").each(function() {
+  //     var nameReplace = $(charaName).text();
+  //     nameReplace = text.replace("userfirstname");
+  //     $(this).text(text);
+  // });
