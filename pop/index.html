@@ -8,7 +8,9 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	</head>
 	<body>
-
+	<?php
+		echo 'hello world';
+	?>
 		<!-- Header -->
 			<header>
 				<div class="starthome">
@@ -38,7 +40,7 @@
       <form name="storytime" method="post" id="storytime">
         <h3 class="form-header">Make your story!</h3>
         <label>Your Character's Name</label><br>
-        <input type="text" id="name"><br><br>
+        <input type="text" id="name" name="name"><br><br>
 				<label>Your Character is a...</label><br>
 				<ul id="gender">
  				<li>
@@ -71,11 +73,15 @@
 				<h3>Other stories to come!</h3>
 				<p></p>
 					 <section class="paintings">
-						 <button id="bgart"><h5>Background art</h5></button>
-						 <br>
-						 <button id="charaart"><h5>Character art</h5></button>
-						 <br>
-						 <button id="otherart"><h5>Other</h5></button>
+						 <a href="#">
+  						<img src="images/art1.jpg" alt="background_art">
+							</a>
+						 <a href="#">
+  						<img src="images/art2.jpg" alt="chara_art">
+							</a>
+						 <a href="#">
+ 						 <img src="images/art3.jpg" alt="other_art">
+ 						 </a>
 					 </section>
 			</section>
 

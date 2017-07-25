@@ -1,4 +1,5 @@
 
+
 window.onload = function() {
 
         // If sessionStorage is storing default values (ex. name), exit the function and do not restore data
@@ -14,7 +15,7 @@ window.onload = function() {
     window.onbeforeunload = function() {
         sessionStorage.setItem("name", $('#name').val(charaName));
     }
-var charaName = document.getElementById("name");
+
 
 window.onload = function() {
     var name = localStorage.getItem(charaName);
@@ -23,19 +24,22 @@ window.onload = function() {
 
 $(".farstory h2").each(function() {
    var text = $(this).html();
-   $(this).html(text.replace("userf1rstname", " + charaName + "));
+   $(this).html(text.replace("userf1rstname", charaName));
 });
 
-var gender = document.getElementById("gender").value;
 
 $("#storytime").on("submit",function(e){
 	e.preventDefault();
+	var charaName = document.getElementById("name");
+
+
 	if (document.getElementById("f-option").checked) {
 	window.open("story1.html");
 	} if (document.getElementById("m-option").checked) {
 	window.open("story2.html");
 } else (document.getElementById("x-option").checked)
 	window.open("story3.html");
+
 });
 
 

@@ -150,7 +150,7 @@ form {
 /*two*/
 
 #two {
-  background-image: url("../images/solid.png");
+  /*background-image: url("../images/solid.png");*/
   background-size: cover;
   top: 50%;
   transform: translateY(50%);
@@ -160,15 +160,16 @@ form {
 /*three*/
 
 #three {
-  background-image: url("../images/solid.png");
+  /*background-image: url("../images/solid.png");*/
   background-size: cover;
   top: 50%;
   transform: translateY(50%);
   line-height: 1em;
 }
 
-.paintings {
-  display: inline;
+.paintings img {
+  display: inline-block;
+  width: 30%;
 }
 
 /*four*/
@@ -194,47 +195,65 @@ form {
   margin-top: 0;
   padding-left: 3%;
   padding-right: 3%;
+  z-index: 60;
+}
+
+.farstory img {
+  display: inline-block;
+  max-width: 55%;
+}
+
+#mommy {
+  z-index: 40;
+  position: relative;
+  left: 12px;
+}
+#mommytall {
+  z-index: 30;
+  position: relative;
+
 }
 
 #startgirl, #startboy, #startx {
   background-color: #e6d36b;
-  height: 500px;
+  /*height: 500px;*/
   text-align: left;
   padding: 0;
 }
 
 #startgirl2, #startboy2, #startx2 {
   background-color: #e66b6b;
-  height: 500px;
+  /*height: 500px;*/
   text-align: right;
 }
 #startgirl3, #startboy3, #startx3 {
   background-color: #316368;
-  height: 500px;
+  /*height: 500px;*/
 }
 
 #startgirl4, #startboy4, #startx4 {
-  height: 700px;
-  text-align: right;
+  /*height: 700px;*/
 }
 
 #startgirl5, #startboy5, #startx5 {
   background-color: #e6d36b;
-  height: 600px;
+  /*height: 600px;*/
 }
 
 #startgirl6, #startboy6, #startx6 {
   background-color: #b497cf;
-  height: 600px;
+  /*height: 600px;*/
+}
+#startgirl7 {
+  background-image: url("images/7g.png");
+  background-size: cover;
+  /*height: 600px;*/
 
-}#startgirl7, #startboy7, #startx7 {
-  background-color: #e6d36b;
-  height: 600px;
 }
 
 #startgirl8, #startboy8, #startx8 {
   background-color: #e66b6b;
-  height: 600px;
+  /*height: 600px;*/
 }
 
 .end {
