@@ -355,15 +355,17 @@ form {
   /*height: 600px;*/
 }
 
-.end {
+/*.end {
   height: 400px;
   background-size: cover;
-}
+}*/
 
 #bottom {
   background-image: url("../images/bottom.png");
-  position: absolute;
-  bottom: 0;
+  background-size: contain;
+}
+.ufn {
+  font-size: 36px;
 }
 
 /*media width change*/
