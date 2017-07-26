@@ -2,15 +2,32 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   height: 100%;
   min-width: 320px;
   margin: 0;
   text-align: center;
   margin-top: 0;
 }
+a {
+  font-size: 20px;
+}
+a:hover {
+  text-decoration: none;
+}
 
-  nav {
+p {
+  font-size: 22px;
+  line-height: 2em;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 35px;
+}
+
+nav {
     position: fixed;
     text-transform: uppercase;
     top: 0;
@@ -19,11 +36,11 @@ body {
     line-height: 1.5em;
     width: 100%;
     text-align: center;
-
+    z-index: 1000;
     /*display: none;*/
   }
 
-  nav a::before {
+nav a::before {
     color: #fff;
     content: attr(data-hover);
     position: absolute;
@@ -35,7 +52,7 @@ body {
 
 
 
-  ul {
+ul {
     padding: 10px;
 
   }
@@ -44,9 +61,12 @@ nav a{
   text-decoration: none;
 
 }
-  li {
+li {
     display: inline;
     padding: 0px 10px 0px 10px;
+}
+div {
+    position: relative;
 }
 
   section {
@@ -54,21 +74,31 @@ nav a{
   height: 600px;
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width: 736px) {
 
+  body, input, textarea, select {
+    font-size: 12pt;
+    line-height: .5em;
+  }
 }
 
-  img {
-
-}
 /*header*/
 
 header {
-  height: 0px;
+  background-image: url("../images/solid.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  height: 600px;
 }
 
 #intro {
-  background-image: url("../images/solid.png");
-  background-size: cover;
   font-weight: lighter;
   height: 550px;
   margin: auto;
@@ -76,24 +106,39 @@ header {
   color: white;
 }
 .content {
-  top: 50%;
-  transform: translateY(50%);
-  line-height: 1em;
+  background-image: url("../images/solid.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px;
   position: relative;
-  letter-spacing: 1px;
+  display: block;
+  top: 0;
+  transform: translateY(50%);
+  line-height: 2em;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.content img {
+    display: block;
+    position: absolute;
+    max-width: 300px;
+    z-index: -10;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(50%);
 }
 
 #intro p h2 {
-
-
+display: inline;
 }
 /*one*/
 
 #one {
   background-image: url("../images/drips.png");
   background-size: cover;
-
-
+  height: auto;
 }
 
 form {
@@ -150,33 +195,71 @@ form {
 /*two*/
 
 #two {
-  /*background-image: url("../images/solid.png");*/
+  background-image: url("../images/solid2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 10px;
+  background-repeat: no-repeat;
   background-size: cover;
-  top: 50%;
-  transform: translateY(50%);
-  line-height: 1em;
+  height: 100vh;
+  height: auto;
+  padding: 40px;
 }
 
 /*three*/
 
 #three {
-  /*background-image: url("../images/solid.png");*/
+  background-image: url("../images/drips.png");
   background-size: cover;
-  top: 50%;
-  transform: translateY(50%);
-  line-height: 1em;
+  height: auto;
+  margin: 0 auto;
+  overflow: auto;
 }
+.paintings {
 
+}
+#three h3 {
+  padding: 25px;
+}
 .paintings img {
+  border-radius: 20px;
   display: inline-block;
   width: 30%;
+}
+.paintings:hover .overlay {
+    opacity: 1;
+}
+.overlay {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 736px) {
+
+  .paintings img {
+    display: inline-block;
+    padding: 5px;
+    justify-content: space-between;
+    width: 80%;
+  }
 }
 
 /*four*/
 
 #four {
-  /*background-image: url("../images/solid.png");*/
-  background-position: bottom;
+  background-image: url("../images/solid3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#four h3 {
+  padding-top: 50px;
 }
 
 /*footer*/
@@ -193,14 +276,12 @@ form {
 .farstory h2 {
   font-size: 30px;
   margin-top: 0;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 5% 0;
   z-index: 60;
 }
 
 .farstory img {
-  display: inline-block;
-  max-width: 55%;
+  padding: 5%;
 }
 
 #mommy {
@@ -217,36 +298,48 @@ form {
 #startgirl, #startboy, #startx {
   background-color: #e6d36b;
   /*height: 500px;*/
-  text-align: left;
+  /*text-align: left;*/
+  margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
 #startgirl2, #startboy2, #startx2 {
   background-color: #e66b6b;
   /*height: 500px;*/
-  text-align: right;
+  /*text-align: right;*/
+  overflow: auto;
 }
 #startgirl3, #startboy3, #startx3 {
   background-color: #316368;
+  overflow: auto;
   /*height: 500px;*/
 }
 
 #startgirl4, #startboy4, #startx4 {
+  overflow: auto;
   /*height: 700px;*/
 }
 
 #startgirl5, #startboy5, #startx5 {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
   background-color: #e6d36b;
   /*height: 600px;*/
 }
 
 #startgirl6, #startboy6, #startx6 {
+  margin: 0;
+  padding: 0;
   background-color: #b497cf;
+  overflow: auto;
   /*height: 600px;*/
 }
 #startgirl7 {
-  background-image: url("images/7g.png");
+  background-image: url("../images/7g.png");
   background-size: cover;
+  height: 500px;
   /*height: 600px;*/
 
 }
@@ -258,6 +351,10 @@ form {
 
 .end {
   height: 400px;
-  background-image: url("../images/bottom.png");
   background-size: cover;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 0;
 }

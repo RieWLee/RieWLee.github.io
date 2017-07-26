@@ -4,35 +4,32 @@
 	<head>
 		<title>Story Time</title>
 		<meta charset="utf-8"/>
+		 <link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main1.css"/>
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	</head>
 	<body>
-	<?php
-		echo 'hello world';
-	?>
 		<!-- Header -->
 			<header>
 				<div class="starthome">
-				</div>
-				<nav>
-					<ul>
-						<li><a href="#intro">Home</a></li>
-						<li><a href="#one">Story</a></li>
-						<li><a href="#two">About</a></li>
-						<li><a href="#three">Portfolio</a></li>
-						<li><a href="#four">Resume</a></li>
-					</ul>
-				</nav>
+				<!-- Intro -->
+					<section id="intro">
+						<div class="content">
+								<p>Let's make a</p>
+								<h2>Story</h2>
+						</div>
+					</section>
 			</header>
 
-		<!-- Intro -->
-			<section id="intro">
-				<div class="content">
-						<p>Let's make a</p>
-						<h2>Story</h2>
-				</div>
-			</section>
+			<nav>
+				<ul>
+					<li><a href="#intro">Home</a></li>
+					<li><a href="#one">Story</a></li>
+					<li><a href="#two">About</a></li>
+					<li><a href="#three">Portfolio</a></li>
+					<li><a href="#four">Resume</a></li>
+				</ul>
+			</nav>
 
 		<!-- One -->
 			<section id="one" class="story">
@@ -44,18 +41,18 @@
 				<label>Your Character is a...</label><br>
 				<ul id="gender">
  				<li>
-					<input type="radio" id="f-option" name="selector">
+					<input type="radio" id="story1" name="girl">
 	 				<label for="f-option">Girl</label>
  				</li>
  				<li>
-	 				<input type="radio" id="m-option" name="selector">
+	 				<input type="radio" id="story2" name="boy">
 	 			<label for="m-option">Boy</label>
  				</li>
-					<input type="radio" id="x-option" name="selector">
+					<input type="radio" id="story3" name="other">
 	 			<label for="x-option">Other</label>
 				</li>
 				</ul><br>
-        <button onclick="myFunction()" id="submit">SUBMIT</button>
+        <button id="submit" action="">SUBMIT</button>
       </form>
 			</section>
 
@@ -70,7 +67,7 @@
 
 			<!-- Three -->
 			<section id="three" class="portfolio">
-				<h3>Other stories to come!</h3>
+				<h3>More stories to come!</h3>
 				<p></p>
 					 <section class="paintings">
 						 <a href="#">
@@ -88,6 +85,17 @@
 			<!-- Four -->
 			<section id="four" class="resume">
 					<h3>Resume for Rie Lee</h3>
+
+					<p><b>Game Artist</b></p>
+					<h4>Voltage Entertainment USA <br>
+					July 2015 - September 2016</h4>
+					<p><b>Junior Game Artist</b></p>
+					<h4>Voltage Entertainment USA <br>
+					October 2014 - July 2015 9 months</h4>
+					<p><b>Associate Producer</b></p>
+					<h4>Voltage Entertainment USA <br>
+					February 2014 - October 2014 8 months</h4>
+					<a href="http://riegrin.artstation.com">Portfolio</a>
 			</section>
 
 			<!-- five -->
