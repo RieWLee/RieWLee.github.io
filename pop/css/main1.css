@@ -372,10 +372,11 @@ form {
 @media screen and (max-width: 736px) {
 
   body, input, textarea, select {
-    font-size: 12pt;
+    font-size: 16pt;
     line-height: .5em;
   }
   img {
     width: 90%;
+    position: relative;
   }
 }
